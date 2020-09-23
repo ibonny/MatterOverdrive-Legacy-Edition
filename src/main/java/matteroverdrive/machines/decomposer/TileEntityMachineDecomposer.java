@@ -93,7 +93,7 @@ public class TileEntityMachineDecomposer extends MOTileEntityMachineMatter imple
 
     @Override
     public float soundVolume() {
-        return 0.3f;
+        return 0.1f;
     }
 
     private void manageExtract() {

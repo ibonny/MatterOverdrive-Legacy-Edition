@@ -89,7 +89,7 @@ repositories {
         url "http://maven.tterrag.com"
     }
     maven {url "http://maven.tehnut.info"}
-    maven {url "http://modmaven.k-4u.nl"}
+    // maven {url "https://modmaven.k-4u.nl"}
     maven {
         name "progwml6"
         url "http://dvs1.progwml6.com/files/maven"
