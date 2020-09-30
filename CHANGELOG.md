@@ -3,6 +3,7 @@ MatterOverdrive - Changelog
 
 Unreleased
 ----------
+* Changed volume level of decomposer and turned off the modmaven mirror. (ibonny)
 * Updated gradle.build file to reflect new versions and dependency locations. (ibonny)
 * Update README.md (TheCodedOne)
 * Update README.md (TheCodedOne)
