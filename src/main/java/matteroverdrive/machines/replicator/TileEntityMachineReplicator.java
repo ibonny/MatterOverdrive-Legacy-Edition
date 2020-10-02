@@ -294,7 +294,8 @@ public class TileEntityMachineReplicator extends MOTileEntityMachineMatter imple
 
     @Override
     public boolean canConnectFromSide(IBlockState blockState, EnumFacing side) {
-        return blockState.getValue(MOBlock.PROPERTY_DIRECTION).getOpposite().equals(side);
+        return true;
+        //        return blockState.getValue(MOBlock.PROPERTY_DIRECTION).getOpposite().equals(side);
     }
 
     @Override
@@ -304,6 +305,7 @@ public class TileEntityMachineReplicator extends MOTileEntityMachineMatter imple
 
     @Override
     public boolean establishConnectionFromSide(IBlockState blockState, EnumFacing side) {
+//        return true;
         return networkComponent.establishConnectionFromSide(blockState, side);
     }
 

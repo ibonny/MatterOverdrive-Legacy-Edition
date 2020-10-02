@@ -3,6 +3,8 @@ MatterOverdrive - Changelog
 
 Unreleased
 ----------
+* Attempting to update the Pattern Storage to allow connections from any side. (ibonny)
+* Updated hasCapability and getCapability to use an if statement instead of the || construct to see if that fixes sidedness of the energy input. (ibonny)
 * Updated block state for pattern storage to rotate 180 degrees. (ibonny)
 * Changed volume level of decomposer and turned off the modmaven mirror. (ibonny)
 * Updated gradle.build file to reflect new versions and dependency locations. (ibonny)

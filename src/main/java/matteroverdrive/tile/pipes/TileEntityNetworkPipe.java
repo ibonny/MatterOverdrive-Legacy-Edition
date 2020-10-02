@@ -189,6 +189,8 @@ public class TileEntityNetworkPipe extends TileEntityPipe implements IMatterNetw
 
     @Override
     public boolean establishConnectionFromSide(IBlockState blockState, EnumFacing side) {
+        System.out.println("Here.");
+
         int connCount = getConnectionsCount();
         if (connCount < 2) {
             if (!MOMathHelper.getBoolean(getConnectionsMask(), side.ordinal())) {

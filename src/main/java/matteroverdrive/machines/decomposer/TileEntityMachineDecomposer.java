@@ -29,6 +29,7 @@ import matteroverdrive.machines.events.MachineEvent;
 import matteroverdrive.tile.MOTileEntityMachineMatter;
 import matteroverdrive.util.MatterHelper;
 import matteroverdrive.util.TimeTracker;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -36,6 +37,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.SoundEvent;
 
+import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.Random;
 
@@ -103,10 +105,19 @@ public class TileEntityMachineDecomposer extends MOTileEntityMachineMatter imple
                     TileEntity e = world.getTileEntity(getPos().offset(dir));
                     EnumFacing opposite = dir.getOpposite();
                     if (e != null && e.hasCapability(MatterOverdriveCapabilities.MATTER_HANDLER, opposite)) {
+//                        System.out.println("We have a capability in the " + dir + " direction.");
+//
+//                        System.out.println("Capability in the opposite direction: " + e.getCapability(MatterOverdriveCapabilities.MATTER_HANDLER, opposite));
+
                         int received = e.getCapability(MatterOverdriveCapabilities.MATTER_HANDLER, opposite).receiveMatter(matterStorage.getFluidAmount(), false);
+
+//                        System.out.println("Matter received is: " + received);
+
                         if (received != 0) {
                             matterStorage.setMatterStored(Math.max(0, matterStorage.getMatterStored() - received));
                             updateClientMatter();
+
+//                            System.out.println("New matter storage is: " + matterStorage.getMatterStored());
                         }
                     }
                 }
