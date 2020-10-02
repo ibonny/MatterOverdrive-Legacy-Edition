@@ -3,6 +3,7 @@ MatterOverdrive - Changelog
 
 Unreleased
 ----------
+* Created the TileEntity for the Microwave and associated helper classes. (ibonny)
 * Update README.md (ibonny)
 * Updated comment WRT drawScreen in TileEntityRendererPatternMonitor.java (Ian Bonnycastle)
 * More fixes. (Ian Bonnycastle)
