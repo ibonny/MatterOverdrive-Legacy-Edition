@@ -41,8 +41,7 @@ public class TileEntityRendererPatternMonitor extends TileEntityRendererMonitor<
 
         int patternCount = 0;
 
-        System.out.println("The tileEntity network is: " + tileEntity.getNetwork());
-
+        // tileEntity.getNetwork() is always null.
         if (tileEntity.getNetwork() != null && tileEntity.getConnectedDatabases() != null) {
             System.out.println("The connected databases are: " + tileEntity.getConnectedDatabases());
 
