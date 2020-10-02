@@ -3,6 +3,10 @@ MatterOverdrive - Changelog
 
 Unreleased
 ----------
+* Update README.md (ibonny)
+* Updated comment WRT drawScreen in TileEntityRendererPatternMonitor.java (Ian Bonnycastle)
+* More fixes. (Ian Bonnycastle)
+* Updating pattern monitor to have number of stored pattenrs displayed. Also updated the network pipes to connect properly. (Ian Bonnycastle)
 * Attempting to update the Pattern Storage to allow connections from any side. (ibonny)
 * Updated hasCapability and getCapability to use an if statement instead of the || construct to see if that fixes sidedness of the energy input. (ibonny)
 * Updated block state for pattern storage to rotate 180 degrees. (ibonny)

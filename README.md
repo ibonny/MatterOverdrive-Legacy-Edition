@@ -16,3 +16,7 @@ Todo:
 
 1. Allow energy transfer across matter network cables. That way connectivity and power go over one set of cables.
 2. Make the microwave able to "cook" food like furnaces do, getting power from RF. If ores are put in the microwave, make it explode.
+
+Unreleased:
+
+1. Created the TileEntity for the Microwave in preparation for getting it to work. It still doesn't have proper functionality yet.
